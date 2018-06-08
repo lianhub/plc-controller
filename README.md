@@ -2,6 +2,8 @@
 # Using Native Node Modules
 
 node-gyp rebuild --target=2.0.2 --arch=x64 --dist-url=https://atom.io/download/electron
+npm rebuild zeromq --runtime=electron --target=2.0.2
+https://stackoverflow.com/questions/38439854/is-zeromq-for-node-js-compatible-with-electron
 
 # electron-quick-start
 

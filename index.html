@@ -25,6 +25,20 @@
   <body>
     <h1>PLC Controller</h1>
 
+    <button id="sendSyncMsgBtn">Activate ecat</button>
+    <label id="syncReply">Awaiting response</label>
+    <p/>
+
+    <button id="sendAsyncMsgBtn">Stop ecat</button>
+    <label id="asyncReply">Awaiting async response</label>
+    <p/>
+
+    <button id="loginBtn">Log in PLC</button>
+    <label id="login">in</label>
+        <p/>
+    <button id="logoutBtn">Log out PLC</button>
+    <label id="logout">out</label>
+        <p/>
     <button id="startPLC">Start PLC</button>
     <button id="stopPLC">Stop PLC</button>
     <p/>
@@ -32,15 +46,12 @@
     <button id="jogBackward">Jog Backward</button>
     <p/>
 
-    <button id="sendSyncMsgBtn">Ping Main Process</button>
-    <p id="syncReply">Awaiting response</p>
-
-    <button id="sendAsyncMsgBtn">Ping Main Process Async</button>
-    <p id="asyncReply">Awaiting async response</p>
+    <label id="statusReply">status</label>
 
     <script>
       // You can also require other files to run in this process
       require('./renderer.js')
+      require('./hello-client.js')
     </script>
   </body>
 </html>
