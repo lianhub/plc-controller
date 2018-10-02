@@ -11,3 +11,5 @@ const forwardBtn = document.getElementById('jogFoward')
 forwardBtn.addEventListener('click', () => {myplc.my_func(2);} )
 const backwardBtn = document.getElementById('jogBackward')
 backwardBtn.addEventListener('click', () => {myplc.my_func(3);} )
+
+console.log("Finishing renderer.js");

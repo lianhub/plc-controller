@@ -51,3 +51,5 @@ suber.on("message", function(reply) {
 });
 //suber.connect("tcp://localhost:5565");
 suber.connect("tcp://10.0.0.2:5565");
+
+console.log("Finishing hello-client.js");

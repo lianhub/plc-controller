@@ -7,6 +7,16 @@ npm rebuild zeromq --runtime=electron --target=3.0.2
 
 https://stackoverflow.com/questions/38439854/is-zeromq-for-node-js-compatible-with-electron
 
+set ELECTRON_ENABLE_LOGGING=true, or
+
+var nodeConsole = require('console');
+
+var myConsole = new nodeConsole.Console(process.stdout, process.stderr);
+
+myConsole.log('Hello World!');
+
+https://stackoverflow.com/questions/31759367/using-console-log-in-electron-app
+
 # electron-quick-start
 
 **Clone and run for a quick way to see Electron in action.**
